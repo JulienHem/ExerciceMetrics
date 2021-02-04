@@ -1,0 +1,45 @@
+<div>
+
+
+  <div class="metric__container">
+    <div class="metric__position">
+
+      <div class="metric" (click)="emitValue()">
+        <div class="metric__values" (click)="sortLeft()">
+          <h1>{{this.metric.one.title}}</h1>
+          <ul>
+            <li [hidden]="isHidden" *ngFor="let values of this.metric.one.metricvalues">{{this.values}}</li>
+          </ul>
+          <ul>
+            <li *ngFor="let lel of this.display">{{this.lel}}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="metric" (click)="emitValue()">
+        <div class="metric__values" (click)="sortMid()">
+          <h1>{{this.metric.second.title}}</h1>
+          <ul>
+            <li [hidden]="isHiddenMid" *ngFor="let values of this.metric.second.metricvalues">{{this.values}}</li>
+          </ul>
+          <ul>
+            <li *ngFor="let lel of this.display2">{{this.lel}}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="metric" (click)="emitValue()">
+        <div class="metric__values" (click)="sortRight()">
+          <h1>{{this.metric.third.title}}</h1>
+          <ul>
+            <li [hidden]="isHiddenRight" *ngFor="let values of this.metric.third.metricvalues">{{this.values}}</li>
+          </ul>
+          <ul>
+            <li *ngFor="let lel of this.display3">{{this.lel}}</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

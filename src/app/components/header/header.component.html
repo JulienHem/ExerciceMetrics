@@ -1,0 +1,20 @@
+<div class="header__container">
+  <div class="cells_position">
+
+    <h2>{{this.values.firstvalues[0]}}</h2>
+    <p>Metric 1</p>
+  </div>
+  <div class="cells_position">
+
+    <h2>{{this.values.secondvalues[0]}}</h2>
+    <p>Metric 2</p>
+  </div>
+  <div class="cells_position">
+
+    <h2>{{this.values.thirdvalues[0]}}</h2>
+    <p>Metric 3</p>
+  </div>
+
+</div>
+
+<app-metrics (emitValues)="getValues($event)"></app-metrics>

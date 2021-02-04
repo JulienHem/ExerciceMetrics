@@ -1,0 +1,28 @@
+.header__container{
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: gray 2px solid;
+  background-color: white;
+}
+
+.cells_position{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 100%;
+  border: 1px black solid;
+  width: 100px;
+  height: 100px;
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+p {
+  margin : 0 0 20px 0;
+  text-align: center;
+}
